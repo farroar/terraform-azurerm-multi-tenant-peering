@@ -71,3 +71,6 @@ In terraform, be sure to use the 'auxiliary_tenant_ids' attribute for the provid
 keep in mind that if you are not using multiple tenants, you cannot use the auxiliary_tenant_ids attribute as it will fail.
 
 **You will use tenant 1's serviceprincipal to perform the peerings in both tenants.**
+
+# Authors
+Module is maintained by Nathan Farrar
