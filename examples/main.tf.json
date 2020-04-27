@@ -1,0 +1,30 @@
+[
+  {
+    "module": {
+      "t1-hub-to-t2-dev-peering": {
+        "source": "./modules/peering",
+        "vnet_names": [
+          "tenant1-eastus2-hub-primary-vnet",
+          "tenant2-eastus2-dev-primary-vnet"
+        ],
+        "names": [
+          "tenant1-hub",
+          "tenant2-dev"
+        ],
+        "resource_group_names": [
+          "tenant1-eastus2-hub-network-rg",
+          "tenant2-eastus2-dev-network-rg"
+        ],
+        "subscription_ids": [
+          "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"
+        ],
+        "allow_virtual_network_access": true,
+        "tenant_id_1": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "tenant_id_2": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+        "client_id_1": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+        "secret_1": "supersecretkeyfortenant1"
+      }
+    }
+  }
+]
