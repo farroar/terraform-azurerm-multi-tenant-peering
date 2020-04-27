@@ -66,7 +66,8 @@ Here is an example provider block for tenant 2:
 Notice that the 'auxiliary_tenant_ids' attribute has a list in which only the ***other*** tenant ID is listed. This will allow for additional mulit-tenancy if you like that kind of thing. :)
 
 
-4. In terraform, be sure to use the 'auxiliary_tenant_ids' attribute for the providers. The auxiliary_tenant_ids is for the OTHER tenants that the provider will need to access
+In terraform, be sure to use the 'auxiliary_tenant_ids' attribute for the providers. The auxiliary_tenant_ids is for the OTHER tenants that the provider will need to access. 
+
     - keep in mind that if you are not using multiple tenants, you cannot use the auxiliary_tenant_ids attribute as it will fail.
 
-5. in Terraform, you will use tenant 1's serviceprincipal to perform the peerings in both tenants.
+You will use tenant 1's serviceprincipal to perform the peerings in both tenants.
