@@ -6,10 +6,10 @@ locals {
 provider "azurerm" {
   alias           = "sub0"
   version         = "~>2.0.0"
-  subscription_id = "var.subscription_ids[0]
-  tenant_id       = "var.tenant_id_1
-  client_id       = "var.client_id_1
-  client_secret   = "var.secret_1
+  subscription_id = var.subscription_ids[0]
+  tenant_id       = var.tenant_id_1
+  client_id       = var.client_id_1
+  client_secret   = var.secret_1
   auxiliary_tenant_ids = [var.tenant_id_2]
 }
 
