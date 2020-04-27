@@ -1,5 +1,3 @@
-
-
 locals {
   side_a_name = "${var.names[0]}-to-${var.names[1]}-peering"
   side_b_name = "${var.names[1]}-to-${var.names[0]}-peering"
