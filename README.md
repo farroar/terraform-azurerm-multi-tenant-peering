@@ -68,6 +68,6 @@ Notice that the 'auxiliary_tenant_ids' attribute has a list in which only the **
 
 In terraform, be sure to use the 'auxiliary_tenant_ids' attribute for the providers. The auxiliary_tenant_ids is for the OTHER tenants that the provider will need to access. 
 
-    - keep in mind that if you are not using multiple tenants, you cannot use the auxiliary_tenant_ids attribute as it will fail.
+keep in mind that if you are not using multiple tenants, you cannot use the auxiliary_tenant_ids attribute as it will fail.
 
-You will use tenant 1's serviceprincipal to perform the peerings in both tenants.
+**You will use tenant 1's serviceprincipal to perform the peerings in both tenants.**
